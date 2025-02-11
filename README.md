@@ -16,10 +16,6 @@ Team Details
 
 
 
-
-
-
-
 ## Abstract
 A machine learning system that automatically classifies music tracks into different genres using the K-Nearest Neighbors (KNN) algorithm. The system analyzes audio features like tempo, spectral characteristics, and rhythm patterns to categorize songs into genres such as rock, jazz, classical, hip-hop, and more.
 
@@ -56,5 +52,9 @@ Music streaming platforms handle millions of tracks, making manual genre classif
 ## Conclusion
 The KNN-based music genre classification system provides a reliable solution for automated music categorization. With an accuracy of [X]%, it demonstrates the effectiveness of using audio feature analysis and machine learning for music classification tasks. The system's modular design allows for easy integration into larger music management systems.
 
+
+
+
+ 
 
 
