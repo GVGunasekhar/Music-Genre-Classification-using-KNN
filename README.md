@@ -18,42 +18,43 @@ Team Details
 
 
 
+
+
 ## Abstract
-An innovative approach to music genre classification that leverages Natural Language Processing (NLP) techniques to analyze song lyrics and metadata. The system processes textual data associated with music tracks to categorize them into different genres, offering a unique perspective on genre classification that goes beyond traditional audio feature analysis.
+A machine learning system that automatically classifies music tracks into different genres using the K-Nearest Neighbors (KNN) algorithm. The system analyzes audio features like tempo, spectral characteristics, and rhythm patterns to categorize songs into genres such as rock, jazz, classical, hip-hop, and more.
 
 ## Why This Project?
-Traditional music classification systems primarily rely on audio features. This project explores a complementary approach that:
-- Utilizes rich textual information in lyrics and metadata
-- Captures cultural and thematic elements of music through text analysis
-- Provides genre insights based on linguistic patterns
-- Offers a robust solution when audio analysis is impractical
+Music streaming platforms handle millions of tracks, making manual genre classification impractical. This project provides an automated solution that:
+- Helps organize large music libraries efficiently
+- Enables better music recommendation systems
+- Assists in music discovery and playlist generation
+- Supports content creators in proper track categorization
 
 ## Process
 1. Data Collection & Preprocessing
-   - Gather song lyrics and metadata from music databases
-   - Clean and normalize text data
-   - Apply tokenization and stop word removal
-   - Convert text to numerical representations using word embeddings
+   - Extract audio features using librosa library
+   - Convert audio signals into numerical features (MFCCs, spectral centroid, chroma features)
+   - Normalize and scale features for consistent processing
 
 2. Model Implementation
-   - Transform lyrics into document vectors
-   - Extract key features using TF-IDF or Word2Vec
-   - Implement text classification models
-   - Train on labeled genre dataset
+   - Split dataset into training and testing sets
+   - Apply KNN algorithm with optimal k-value
+   - Train model using feature vectors and genre labels
 
-3. Feature Engineering
-   - Generate word embeddings for lyrics
-   - Extract semantic features from metadata
-   - Create genre-specific vocabulary profiles
-   - Identify key linguistic patterns per genre
+3. Evaluation & Optimization
+   - Measure accuracy, precision, and recall
+   - Fine-tune hyperparameters
+   - Cross-validate results
 
 ## Required Technology & Algorithms
 - Python 3.x
-- NLP Libraries: NLTK, spaCy, transformers
-- Text Processing: TF-IDF, Word2Vec, BERT
-- Machine Learning: scikit-learn, PyTorch,KNN Algorithm
-- Text Analysis Tools: WordCloud, Gensim
+- Libraries: librosa, scikit-learn, numpy, pandas
+- Audio processing techniques: FFT, MFCC extraction
+- K-Nearest Neighbors algorithm
+- Feature scaling and normalization methods
 
 ## Conclusion
-The NLP-based approach to music genre classification demonstrates the power of analyzing textual content for music categorization. By leveraging advanced language processing techniques, the system achieves meaningful genre classification based on lyrical themes, vocabulary usage, and metadata patterns. This text-based method complements traditional audio analysis approaches, offering a more comprehensive solution for music classification tasks.
+The KNN-based music genre classification system provides a reliable solution for automated music categorization. With an accuracy of [X]%, it demonstrates the effectiveness of using audio feature analysis and machine learning for music classification tasks. The system's modular design allows for easy integration into larger music management systems.
+
+
 
