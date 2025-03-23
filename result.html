@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container result">
+        <h1>Prediction Result</h1>
+        {% if error %}
+            <p class="error">{{ error }}</p>
+        {% else %}
+        <h2>The predicted music genre is: <span class="genre">{{ genre }}</span></h2>
+            <audio controls>
+                <source src="{{ url_for('static', filename='audio/' + filename) }}" 
+                        type="{{ mime_type }}">
+                Your browser does not support the audio element.
+            </audio>
+        {% endif %}
+        <a href="{{ url_for('index') }}">UploadAnother</a>
+    </div>
+</body>
+</html>

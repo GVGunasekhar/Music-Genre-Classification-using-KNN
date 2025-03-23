@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Genre Classification 🎶</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Music Genre Classification 🎶</h1>
+    <h2>Upload an Audio File</h2>
+    
+    {% if error %}
+        <p>{{ error }}</p>
+    {% endif %}
+    
+    <form action="/" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".wav,.mp3">
+        <br><br>
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>

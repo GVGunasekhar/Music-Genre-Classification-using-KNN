@@ -1,0 +1,127 @@
+/* General body styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ff6a00, #ee0979); /* Vibrant music-themed gradient */
+    color: white;
+}
+
+/* Main container */
+.container {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1); /* Transparent glass effect */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+/* Header styling */
+h1 {
+    color: #fff;
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Form styling */
+input, button {
+    margin-top: 10px;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+}
+
+/* Upload input */
+input[type="file"] {
+    background-color: white;
+    color: black;
+    border: 2px solid white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Button Styling */
+button {
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 12px 20px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+    transform: scale(1.05);
+}
+
+/* Result Section */
+.result {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background: rgba(0, 255, 127, 0.2);
+    border: 2px solid #00ff7f;
+    box-shadow: 0px 0px 10px rgba(0, 255, 127, 0.6);
+    font-size: 20px;
+}
+
+/* Audio Player Styling */
+audio {
+    margin-top: 15px;
+    width: 80%;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 5px;
+}
+
+/* Error Message */
+.error {
+    color: white;
+    background-color: rgba(255, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Link Styling */
+a {
+    text-decoration: none;
+    color: #ffdf00;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Genre Styling */
+.genre {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffcc00;  /* Bright yellow */
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    background: rgba(255, 204, 0, 0.2);
+    padding: 5px 15px;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 2px 2px 8px rgba(255, 204, 0, 0.5);
+}
+
+a:hover {
+    color: #fff700;
+    text-shadow: 0px 0px 10px rgba(255, 255, 0, 0.8);
+}
